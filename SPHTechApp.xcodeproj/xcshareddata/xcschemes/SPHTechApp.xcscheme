@@ -64,6 +64,16 @@
                ReferencedContainer = "container:SPHTechApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "79BBE81B2489EDEE00884517"
+               BuildableName = "SPHTechAppIntergationTests.xctest"
+               BlueprintName = "SPHTechAppIntergationTests"
+               ReferencedContainer = "container:SPHTechApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

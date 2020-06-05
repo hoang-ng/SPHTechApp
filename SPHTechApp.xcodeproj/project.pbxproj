@@ -24,6 +24,7 @@
 		797975042489DC88008A212D /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797975032489DC88008A212D /* HTTPURLResponse+StatusCode.swift */; };
 		797975082489DE79008A212D /* RemoteMobileDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797975072489DE79008A212D /* RemoteMobileDataServiceTests.swift */; };
 		7979750A2489E446008A212D /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797975092489E446008A212D /* URLSessionHTTPClient.swift */; };
+		79BBE81F2489EDEE00884517 /* SPHTechAppIntergationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE81E2489EDEE00884517 /* SPHTechAppIntergationTests.swift */; };
 		9E06FD3EC1B179D850A5C02A /* Pods_SPHTechAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71BBA91357C3B9DCC8F012D /* Pods_SPHTechAppTests.framework */; };
 		DF05565907F893E492CE3417 /* Pods_SPHTechApp_SPHTechAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE9C1E3EFD22B5CC73D7D6E /* Pods_SPHTechApp_SPHTechAppUITests.framework */; };
 		DF74CBDCDC46252A58319587 /* Pods_SPHTechApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B613EA208F3C27C8CD5BB358 /* Pods_SPHTechApp.framework */; };
@@ -38,6 +39,13 @@
 			remoteInfo = SPHTechApp;
 		};
 		797974E22489D4AB008A212D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 797974B82489D4A9008A212D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 797974BF2489D4A9008A212D;
+			remoteInfo = SPHTechApp;
+		};
+		79BBE8212489EDEE00884517 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 797974B82489D4A9008A212D /* Project object */;
 			proxyType = 1;
@@ -73,6 +81,9 @@
 		797975032489DC88008A212D /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
 		797975072489DE79008A212D /* RemoteMobileDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteMobileDataServiceTests.swift; sourceTree = "<group>"; };
 		797975092489E446008A212D /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		79BBE81C2489EDEE00884517 /* SPHTechAppIntergationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPHTechAppIntergationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79BBE81E2489EDEE00884517 /* SPHTechAppIntergationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHTechAppIntergationTests.swift; sourceTree = "<group>"; };
+		79BBE8202489EDEE00884517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B613EA208F3C27C8CD5BB358 /* Pods_SPHTechApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPHTechApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73B9DF74106B023C69602C9 /* Pods-SPHTechApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechApp.release.xcconfig"; path = "Target Support Files/Pods-SPHTechApp/Pods-SPHTechApp.release.xcconfig"; sourceTree = "<group>"; };
 		D24E01EE38C1FE5BC4103D3D /* Pods-SPHTechApp-SPHTechAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechApp-SPHTechAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SPHTechApp-SPHTechAppUITests/Pods-SPHTechApp-SPHTechAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +117,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79BBE8192489EDEE00884517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -115,6 +133,7 @@
 				797974C22489D4A9008A212D /* SPHTechApp */,
 				797974D92489D4AB008A212D /* SPHTechAppTests */,
 				797974E42489D4AB008A212D /* SPHTechAppUITests */,
+				79BBE81D2489EDEE00884517 /* SPHTechAppIntergationTests */,
 				797974C12489D4A9008A212D /* Products */,
 				7AA52DFC24E60BE8C9CAFB2A /* Pods */,
 				97F9ADE6E525EBBA258AA6BB /* Frameworks */,
@@ -127,6 +146,7 @@
 				797974C02489D4A9008A212D /* SPHTechApp.app */,
 				797974D62489D4AB008A212D /* SPHTechAppTests.xctest */,
 				797974E12489D4AB008A212D /* SPHTechAppUITests.xctest */,
+				79BBE81C2489EDEE00884517 /* SPHTechAppIntergationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,6 +240,15 @@
 			path = MobileDataAPI;
 			sourceTree = "<group>";
 		};
+		79BBE81D2489EDEE00884517 /* SPHTechAppIntergationTests */ = {
+			isa = PBXGroup;
+			children = (
+				79BBE81E2489EDEE00884517 /* SPHTechAppIntergationTests.swift */,
+				79BBE8202489EDEE00884517 /* Info.plist */,
+			);
+			path = SPHTechAppIntergationTests;
+			sourceTree = "<group>";
+		};
 		7AA52DFC24E60BE8C9CAFB2A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +333,24 @@
 			productReference = 797974E12489D4AB008A212D /* SPHTechAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		79BBE81B2489EDEE00884517 /* SPHTechAppIntergationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79BBE8232489EDEE00884517 /* Build configuration list for PBXNativeTarget "SPHTechAppIntergationTests" */;
+			buildPhases = (
+				79BBE8182489EDEE00884517 /* Sources */,
+				79BBE8192489EDEE00884517 /* Frameworks */,
+				79BBE81A2489EDEE00884517 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79BBE8222489EDEE00884517 /* PBXTargetDependency */,
+			);
+			name = SPHTechAppIntergationTests;
+			productName = SPHTechAppIntergationTests;
+			productReference = 79BBE81C2489EDEE00884517 /* SPHTechAppIntergationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -325,6 +372,10 @@
 						CreatedOnToolsVersion = 11.5;
 						TestTargetID = 797974BF2489D4A9008A212D;
 					};
+					79BBE81B2489EDEE00884517 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 797974BF2489D4A9008A212D;
+					};
 				};
 			};
 			buildConfigurationList = 797974BB2489D4A9008A212D /* Build configuration list for PBXProject "SPHTechApp" */;
@@ -343,6 +394,7 @@
 				797974BF2489D4A9008A212D /* SPHTechApp */,
 				797974D52489D4AB008A212D /* SPHTechAppTests */,
 				797974E02489D4AB008A212D /* SPHTechAppUITests */,
+				79BBE81B2489EDEE00884517 /* SPHTechAppIntergationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -366,6 +418,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		797974DF2489D4AB008A212D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BBE81A2489EDEE00884517 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -513,6 +572,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79BBE8182489EDEE00884517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79BBE81F2489EDEE00884517 /* SPHTechAppIntergationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -525,6 +592,11 @@
 			isa = PBXTargetDependency;
 			target = 797974BF2489D4A9008A212D /* SPHTechApp */;
 			targetProxy = 797974E22489D4AB008A212D /* PBXContainerItemProxy */;
+		};
+		79BBE8222489EDEE00884517 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 797974BF2489D4A9008A212D /* SPHTechApp */;
+			targetProxy = 79BBE8212489EDEE00884517 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -782,6 +854,44 @@
 			};
 			name = Release;
 		};
+		79BBE8242489EDEE00884517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SPHTechAppIntergationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoangnn.SPHTechAppIntergationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPHTechApp.app/SPHTechApp";
+			};
+			name = Debug;
+		};
+		79BBE8252489EDEE00884517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SPHTechAppIntergationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoangnn.SPHTechAppIntergationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPHTechApp.app/SPHTechApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -817,6 +927,15 @@
 			buildConfigurations = (
 				797974F12489D4AB008A212D /* Debug */,
 				797974F22489D4AB008A212D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79BBE8232489EDEE00884517 /* Build configuration list for PBXNativeTarget "SPHTechAppIntergationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79BBE8242489EDEE00884517 /* Debug */,
+				79BBE8252489EDEE00884517 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
