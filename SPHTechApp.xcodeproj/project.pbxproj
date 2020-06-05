@@ -26,6 +26,9 @@
 		7979750A2489E446008A212D /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797975092489E446008A212D /* URLSessionHTTPClient.swift */; };
 		79BBE8272489EE8400884517 /* RemoteMobileDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE8262489EE8400884517 /* RemoteMobileDataServiceTests.swift */; };
 		79BBE82A2489EED700884517 /* records.json in Resources */ = {isa = PBXBuildFile; fileRef = 79BBE8292489EED700884517 /* records.json */; };
+		79BBE82C2489F26900884517 /* AnnualRecordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE82B2489F26900884517 /* AnnualRecordItem.swift */; };
+		79BBE82D2489F92E00884517 /* records.json in Resources */ = {isa = PBXBuildFile; fileRef = 79BBE8292489EED700884517 /* records.json */; };
+		79BBE8302489F94800884517 /* AnnualRecordItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE82F2489F94800884517 /* AnnualRecordItemTests.swift */; };
 		9E06FD3EC1B179D850A5C02A /* Pods_SPHTechAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71BBA91357C3B9DCC8F012D /* Pods_SPHTechAppTests.framework */; };
 		DF05565907F893E492CE3417 /* Pods_SPHTechApp_SPHTechAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE9C1E3EFD22B5CC73D7D6E /* Pods_SPHTechApp_SPHTechAppUITests.framework */; };
 		DF74CBDCDC46252A58319587 /* Pods_SPHTechApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B613EA208F3C27C8CD5BB358 /* Pods_SPHTechApp.framework */; };
@@ -86,6 +89,8 @@
 		79BBE8202489EDEE00884517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79BBE8262489EE8400884517 /* RemoteMobileDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteMobileDataServiceTests.swift; sourceTree = "<group>"; };
 		79BBE8292489EED700884517 /* records.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = records.json; sourceTree = "<group>"; };
+		79BBE82B2489F26900884517 /* AnnualRecordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnualRecordItem.swift; sourceTree = "<group>"; };
+		79BBE82F2489F94800884517 /* AnnualRecordItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnualRecordItemTests.swift; sourceTree = "<group>"; };
 		B613EA208F3C27C8CD5BB358 /* Pods_SPHTechApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPHTechApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73B9DF74106B023C69602C9 /* Pods-SPHTechApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechApp.release.xcconfig"; path = "Target Support Files/Pods-SPHTechApp/Pods-SPHTechApp.release.xcconfig"; sourceTree = "<group>"; };
 		D24E01EE38C1FE5BC4103D3D /* Pods-SPHTechApp-SPHTechAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechApp-SPHTechAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SPHTechApp-SPHTechAppUITests/Pods-SPHTechApp-SPHTechAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -214,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				797974FC2489DA17008A212D /* RecordItem.swift */,
+				79BBE82B2489F26900884517 /* AnnualRecordItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 		797975052489DE31008A212D /* MobileDataService */ = {
 			isa = PBXGroup;
 			children = (
+				79BBE82E2489F93800884517 /* Model */,
 				797975062489DE47008A212D /* MobileDataAPI */,
 			);
 			path = MobileDataService;
@@ -258,6 +265,14 @@
 				79BBE8292489EED700884517 /* records.json */,
 			);
 			path = "Sample Data";
+			sourceTree = "<group>";
+		};
+		79BBE82E2489F93800884517 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79BBE82F2489F94800884517 /* AnnualRecordItemTests.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7AA52DFC24E60BE8C9CAFB2A /* Pods */ = {
@@ -425,6 +440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79BBE82D2489F92E00884517 /* records.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +571,7 @@
 			files = (
 				797974C82489D4A9008A212D /* ViewController.swift in Sources */,
 				797974C42489D4A9008A212D /* AppDelegate.swift in Sources */,
+				79BBE82C2489F26900884517 /* AnnualRecordItem.swift in Sources */,
 				797975042489DC88008A212D /* HTTPURLResponse+StatusCode.swift in Sources */,
 				797974FF2489DAE6008A212D /* HTTPClient.swift in Sources */,
 				797974F72489D8E6008A212D /* RemoteMobileDataService.swift in Sources */,
@@ -572,6 +589,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				797974DB2489D4AB008A212D /* SPHTechAppTests.swift in Sources */,
+				79BBE8302489F94800884517 /* AnnualRecordItemTests.swift in Sources */,
 				797975082489DE79008A212D /* RemoteMobileDataServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
