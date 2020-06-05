@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,15 @@
 		797974D02489D4AA008A212D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797974CE2489D4AA008A212D /* LaunchScreen.storyboard */; };
 		797974DB2489D4AB008A212D /* SPHTechAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797974DA2489D4AB008A212D /* SPHTechAppTests.swift */; };
 		797974E62489D4AB008A212D /* SPHTechAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797974E52489D4AB008A212D /* SPHTechAppUITests.swift */; };
+		797974F52489D891008A212D /* RemoteRecordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797974F42489D891008A212D /* RemoteRecordItem.swift */; };
+		797974F72489D8E6008A212D /* RemoteMobileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797974F62489D8E6008A212D /* RemoteMobileDataService.swift */; };
+		797974FA2489D9CA008A212D /* MobileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797974F92489D9CA008A212D /* MobileDataService.swift */; };
+		797974FD2489DA17008A212D /* RecordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797974FC2489DA17008A212D /* RecordItem.swift */; };
+		797974FF2489DAE6008A212D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797974FE2489DAE6008A212D /* HTTPClient.swift */; };
+		797975012489DB80008A212D /* RecordItemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797975002489DB80008A212D /* RecordItemMapper.swift */; };
+		797975042489DC88008A212D /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797975032489DC88008A212D /* HTTPURLResponse+StatusCode.swift */; };
+		797975082489DE79008A212D /* RemoteMobileDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797975072489DE79008A212D /* RemoteMobileDataServiceTests.swift */; };
+		7979750A2489E446008A212D /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797975092489E446008A212D /* URLSessionHTTPClient.swift */; };
 		9E06FD3EC1B179D850A5C02A /* Pods_SPHTechAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71BBA91357C3B9DCC8F012D /* Pods_SPHTechAppTests.framework */; };
 		DF05565907F893E492CE3417 /* Pods_SPHTechApp_SPHTechAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE9C1E3EFD22B5CC73D7D6E /* Pods_SPHTechApp_SPHTechAppUITests.framework */; };
 		DF74CBDCDC46252A58319587 /* Pods_SPHTechApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B613EA208F3C27C8CD5BB358 /* Pods_SPHTechApp.framework */; };
@@ -55,6 +64,15 @@
 		797974E12489D4AB008A212D /* SPHTechAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPHTechAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		797974E52489D4AB008A212D /* SPHTechAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHTechAppUITests.swift; sourceTree = "<group>"; };
 		797974E72489D4AB008A212D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		797974F42489D891008A212D /* RemoteRecordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRecordItem.swift; sourceTree = "<group>"; };
+		797974F62489D8E6008A212D /* RemoteMobileDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteMobileDataService.swift; sourceTree = "<group>"; };
+		797974F92489D9CA008A212D /* MobileDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataService.swift; sourceTree = "<group>"; };
+		797974FC2489DA17008A212D /* RecordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordItem.swift; sourceTree = "<group>"; };
+		797974FE2489DAE6008A212D /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		797975002489DB80008A212D /* RecordItemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordItemMapper.swift; sourceTree = "<group>"; };
+		797975032489DC88008A212D /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
+		797975072489DE79008A212D /* RemoteMobileDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteMobileDataServiceTests.swift; sourceTree = "<group>"; };
+		797975092489E446008A212D /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		B613EA208F3C27C8CD5BB358 /* Pods_SPHTechApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPHTechApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73B9DF74106B023C69602C9 /* Pods-SPHTechApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechApp.release.xcconfig"; path = "Target Support Files/Pods-SPHTechApp/Pods-SPHTechApp.release.xcconfig"; sourceTree = "<group>"; };
 		D24E01EE38C1FE5BC4103D3D /* Pods-SPHTechApp-SPHTechAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechApp-SPHTechAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SPHTechApp-SPHTechAppUITests/Pods-SPHTechApp-SPHTechAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +134,7 @@
 		797974C22489D4A9008A212D /* SPHTechApp */ = {
 			isa = PBXGroup;
 			children = (
+				797974F32489D866008A212D /* MobileDataService */,
 				797974C32489D4A9008A212D /* AppDelegate.swift */,
 				797974C52489D4A9008A212D /* SceneDelegate.swift */,
 				797974C72489D4A9008A212D /* ViewController.swift */,
@@ -130,6 +149,7 @@
 		797974D92489D4AB008A212D /* SPHTechAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				797975052489DE31008A212D /* MobileDataService */,
 				797974DA2489D4AB008A212D /* SPHTechAppTests.swift */,
 				797974DC2489D4AB008A212D /* Info.plist */,
 			);
@@ -145,6 +165,61 @@
 			path = SPHTechAppUITests;
 			sourceTree = "<group>";
 		};
+		797974F32489D866008A212D /* MobileDataService */ = {
+			isa = PBXGroup;
+			children = (
+				797974FB2489DA06008A212D /* Model */,
+				797974F82489D9B2008A212D /* MobileDataAPI */,
+				797974F92489D9CA008A212D /* MobileDataService.swift */,
+			);
+			path = MobileDataService;
+			sourceTree = "<group>";
+		};
+		797974F82489D9B2008A212D /* MobileDataAPI */ = {
+			isa = PBXGroup;
+			children = (
+				797975022489DC70008A212D /* Helpers */,
+				797974F42489D891008A212D /* RemoteRecordItem.swift */,
+				797974F62489D8E6008A212D /* RemoteMobileDataService.swift */,
+				797974FE2489DAE6008A212D /* HTTPClient.swift */,
+				797975002489DB80008A212D /* RecordItemMapper.swift */,
+				797975092489E446008A212D /* URLSessionHTTPClient.swift */,
+			);
+			path = MobileDataAPI;
+			sourceTree = "<group>";
+		};
+		797974FB2489DA06008A212D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				797974FC2489DA17008A212D /* RecordItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		797975022489DC70008A212D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				797975032489DC88008A212D /* HTTPURLResponse+StatusCode.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		797975052489DE31008A212D /* MobileDataService */ = {
+			isa = PBXGroup;
+			children = (
+				797975062489DE47008A212D /* MobileDataAPI */,
+			);
+			path = MobileDataService;
+			sourceTree = "<group>";
+		};
+		797975062489DE47008A212D /* MobileDataAPI */ = {
+			isa = PBXGroup;
+			children = (
+				797975072489DE79008A212D /* RemoteMobileDataServiceTests.swift */,
+			);
+			path = MobileDataAPI;
+			sourceTree = "<group>";
+		};
 		7AA52DFC24E60BE8C9CAFB2A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +230,6 @@
 				E5034ECFF80D757A24BC00D8 /* Pods-SPHTechAppTests.debug.xcconfig */,
 				5452A1B39D0588B9DA647432 /* Pods-SPHTechAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -410,7 +484,15 @@
 			files = (
 				797974C82489D4A9008A212D /* ViewController.swift in Sources */,
 				797974C42489D4A9008A212D /* AppDelegate.swift in Sources */,
+				797975042489DC88008A212D /* HTTPURLResponse+StatusCode.swift in Sources */,
+				797974FF2489DAE6008A212D /* HTTPClient.swift in Sources */,
+				797974F72489D8E6008A212D /* RemoteMobileDataService.swift in Sources */,
+				797975012489DB80008A212D /* RecordItemMapper.swift in Sources */,
+				7979750A2489E446008A212D /* URLSessionHTTPClient.swift in Sources */,
+				797974FA2489D9CA008A212D /* MobileDataService.swift in Sources */,
 				797974C62489D4A9008A212D /* SceneDelegate.swift in Sources */,
+				797974FD2489DA17008A212D /* RecordItem.swift in Sources */,
+				797974F52489D891008A212D /* RemoteRecordItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				797974DB2489D4AB008A212D /* SPHTechAppTests.swift in Sources */,
+				797975082489DE79008A212D /* RemoteMobileDataServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
