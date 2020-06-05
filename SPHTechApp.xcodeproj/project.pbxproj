@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		797974C42489D4A9008A212D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797974C32489D4A9008A212D /* AppDelegate.swift */; };
 		797974C62489D4A9008A212D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797974C52489D4A9008A212D /* SceneDelegate.swift */; };
-		797974C82489D4A9008A212D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797974C72489D4A9008A212D /* ViewController.swift */; };
 		797974CB2489D4A9008A212D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797974C92489D4A9008A212D /* Main.storyboard */; };
 		797974CD2489D4AA008A212D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797974CC2489D4AA008A212D /* Assets.xcassets */; };
 		797974D02489D4AA008A212D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797974CE2489D4AA008A212D /* LaunchScreen.storyboard */; };
@@ -29,6 +28,13 @@
 		79BBE82C2489F26900884517 /* AnnualRecordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE82B2489F26900884517 /* AnnualRecordItem.swift */; };
 		79BBE82D2489F92E00884517 /* records.json in Resources */ = {isa = PBXBuildFile; fileRef = 79BBE8292489EED700884517 /* records.json */; };
 		79BBE8302489F94800884517 /* AnnualRecordItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE82F2489F94800884517 /* AnnualRecordItemTests.swift */; };
+		79BBE8332489FF1E00884517 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE8322489FF1E00884517 /* RecordsViewController.swift */; };
+		79BBE8362489FF4600884517 /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE8352489FF4600884517 /* RecordCell.swift */; };
+		79BBE8382489FFE900884517 /* RecordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE8372489FFE900884517 /* RecordsViewModel.swift */; };
+		79BBE83C248A002200884517 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE83B248A002200884517 /* BindableType.swift */; };
+		79BBE83E248A106D00884517 /* RecordCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE83D248A106D00884517 /* RecordCellModel.swift */; };
+		79BBE840248A18A400884517 /* RecordsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE83F248A18A400884517 /* RecordsUIComposer.swift */; };
+		79BBE843248A203500884517 /* RecordsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE842248A203500884517 /* RecordsViewControllerTests.swift */; };
 		9E06FD3EC1B179D850A5C02A /* Pods_SPHTechAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71BBA91357C3B9DCC8F012D /* Pods_SPHTechAppTests.framework */; };
 		DF05565907F893E492CE3417 /* Pods_SPHTechApp_SPHTechAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE9C1E3EFD22B5CC73D7D6E /* Pods_SPHTechApp_SPHTechAppUITests.framework */; };
 		DF74CBDCDC46252A58319587 /* Pods_SPHTechApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B613EA208F3C27C8CD5BB358 /* Pods_SPHTechApp.framework */; };
@@ -65,7 +71,6 @@
 		797974C02489D4A9008A212D /* SPHTechApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPHTechApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		797974C32489D4A9008A212D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		797974C52489D4A9008A212D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		797974C72489D4A9008A212D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		797974CA2489D4A9008A212D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		797974CC2489D4AA008A212D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		797974CF2489D4AA008A212D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,6 +96,13 @@
 		79BBE8292489EED700884517 /* records.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = records.json; sourceTree = "<group>"; };
 		79BBE82B2489F26900884517 /* AnnualRecordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnualRecordItem.swift; sourceTree = "<group>"; };
 		79BBE82F2489F94800884517 /* AnnualRecordItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnualRecordItemTests.swift; sourceTree = "<group>"; };
+		79BBE8322489FF1E00884517 /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
+		79BBE8352489FF4600884517 /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
+		79BBE8372489FFE900884517 /* RecordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewModel.swift; sourceTree = "<group>"; };
+		79BBE83B248A002200884517 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
+		79BBE83D248A106D00884517 /* RecordCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCellModel.swift; sourceTree = "<group>"; };
+		79BBE83F248A18A400884517 /* RecordsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsUIComposer.swift; sourceTree = "<group>"; };
+		79BBE842248A203500884517 /* RecordsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewControllerTests.swift; sourceTree = "<group>"; };
 		B613EA208F3C27C8CD5BB358 /* Pods_SPHTechApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPHTechApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73B9DF74106B023C69602C9 /* Pods-SPHTechApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechApp.release.xcconfig"; path = "Target Support Files/Pods-SPHTechApp/Pods-SPHTechApp.release.xcconfig"; sourceTree = "<group>"; };
 		D24E01EE38C1FE5BC4103D3D /* Pods-SPHTechApp-SPHTechAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechApp-SPHTechAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SPHTechApp-SPHTechAppUITests/Pods-SPHTechApp-SPHTechAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,10 +173,11 @@
 		797974C22489D4A9008A212D /* SPHTechApp */ = {
 			isa = PBXGroup;
 			children = (
+				79BBE839248A000800884517 /* Utils */,
+				79BBE8312489FEFB00884517 /* ViewControllers */,
 				797974F32489D866008A212D /* MobileDataService */,
 				797974C32489D4A9008A212D /* AppDelegate.swift */,
 				797974C52489D4A9008A212D /* SceneDelegate.swift */,
-				797974C72489D4A9008A212D /* ViewController.swift */,
 				797974C92489D4A9008A212D /* Main.storyboard */,
 				797974CC2489D4AA008A212D /* Assets.xcassets */,
 				797974CE2489D4AA008A212D /* LaunchScreen.storyboard */,
@@ -176,6 +189,7 @@
 		797974D92489D4AB008A212D /* SPHTechAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				79BBE841248A202000884517 /* ViewControllers */,
 				797975052489DE31008A212D /* MobileDataService */,
 				797974DA2489D4AB008A212D /* SPHTechAppTests.swift */,
 				797974DC2489D4AB008A212D /* Info.plist */,
@@ -273,6 +287,50 @@
 				79BBE82F2489F94800884517 /* AnnualRecordItemTests.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		79BBE8312489FEFB00884517 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79BBE8342489FF3900884517 /* Cell */,
+				79BBE8322489FF1E00884517 /* RecordsViewController.swift */,
+				79BBE8372489FFE900884517 /* RecordsViewModel.swift */,
+				79BBE83F248A18A400884517 /* RecordsUIComposer.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		79BBE8342489FF3900884517 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				79BBE8352489FF4600884517 /* RecordCell.swift */,
+				79BBE83D248A106D00884517 /* RecordCellModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		79BBE839248A000800884517 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				79BBE83A248A001500884517 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		79BBE83A248A001500884517 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				79BBE83B248A002200884517 /* BindableType.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		79BBE841248A202000884517 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79BBE842248A203500884517 /* RecordsViewControllerTests.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		7AA52DFC24E60BE8C9CAFB2A /* Pods */ = {
@@ -569,17 +627,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				797974C82489D4A9008A212D /* ViewController.swift in Sources */,
+				79BBE83C248A002200884517 /* BindableType.swift in Sources */,
 				797974C42489D4A9008A212D /* AppDelegate.swift in Sources */,
 				79BBE82C2489F26900884517 /* AnnualRecordItem.swift in Sources */,
 				797975042489DC88008A212D /* HTTPURLResponse+StatusCode.swift in Sources */,
 				797974FF2489DAE6008A212D /* HTTPClient.swift in Sources */,
 				797974F72489D8E6008A212D /* RemoteMobileDataService.swift in Sources */,
+				79BBE8382489FFE900884517 /* RecordsViewModel.swift in Sources */,
 				797975012489DB80008A212D /* RecordItemMapper.swift in Sources */,
 				7979750A2489E446008A212D /* URLSessionHTTPClient.swift in Sources */,
 				797974FA2489D9CA008A212D /* MobileDataService.swift in Sources */,
 				797974C62489D4A9008A212D /* SceneDelegate.swift in Sources */,
+				79BBE840248A18A400884517 /* RecordsUIComposer.swift in Sources */,
+				79BBE8362489FF4600884517 /* RecordCell.swift in Sources */,
 				797974FD2489DA17008A212D /* RecordItem.swift in Sources */,
+				79BBE83E248A106D00884517 /* RecordCellModel.swift in Sources */,
+				79BBE8332489FF1E00884517 /* RecordsViewController.swift in Sources */,
 				797974F52489D891008A212D /* RemoteRecordItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,6 +653,7 @@
 			files = (
 				797974DB2489D4AB008A212D /* SPHTechAppTests.swift in Sources */,
 				79BBE8302489F94800884517 /* AnnualRecordItemTests.swift in Sources */,
+				79BBE843248A203500884517 /* RecordsViewControllerTests.swift in Sources */,
 				797975082489DE79008A212D /* RemoteMobileDataServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
