@@ -69,8 +69,6 @@ class RemoteMobileDataServiceTests: XCTestCase {
         let (item2, item2JSON) = makeItem(id: 2, volume: 0.000801, quater: "2005-Q4")
 
         let itemsJSON = makeItemsJSON([item1JSON, item2JSON])
-        let str = String(decoding: itemsJSON, as: UTF8.self)
-        print(str)
 
         expect(sut, toCompleteWith: .success([item1, item2]), when: {
             client.complete(with: 200, data: itemsJSON)

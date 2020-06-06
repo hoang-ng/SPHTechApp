@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		792DB0E5248B40A700D34865 /* MobileDataServiceCompositeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DB0E4248B40A700D34865 /* MobileDataServiceCompositeTests.swift */; };
+		792DB0E7248B433A00D34865 /* MobileDataServiceCacheDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DB0E6248B433A00D34865 /* MobileDataServiceCacheDecoratorTests.swift */; };
 		797974C42489D4A9008A212D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797974C32489D4A9008A212D /* AppDelegate.swift */; };
 		797974C62489D4A9008A212D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797974C52489D4A9008A212D /* SceneDelegate.swift */; };
 		797974CB2489D4A9008A212D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797974C92489D4A9008A212D /* Main.storyboard */; };
 		797974CD2489D4AA008A212D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797974CC2489D4AA008A212D /* Assets.xcassets */; };
 		797974D02489D4AA008A212D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797974CE2489D4AA008A212D /* LaunchScreen.storyboard */; };
-		797974DB2489D4AB008A212D /* SPHTechAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797974DA2489D4AB008A212D /* SPHTechAppTests.swift */; };
 		797974E62489D4AB008A212D /* SPHTechAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797974E52489D4AB008A212D /* SPHTechAppUITests.swift */; };
 		797974F52489D891008A212D /* RemoteRecordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797974F42489D891008A212D /* RemoteRecordItem.swift */; };
 		797974F72489D8E6008A212D /* RemoteMobileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797974F62489D8E6008A212D /* RemoteMobileDataService.swift */; };
@@ -35,6 +36,15 @@
 		79BBE83E248A106D00884517 /* RecordCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE83D248A106D00884517 /* RecordCellModel.swift */; };
 		79BBE840248A18A400884517 /* RecordsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE83F248A18A400884517 /* RecordsUIComposer.swift */; };
 		79BBE843248A203500884517 /* RecordsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE842248A203500884517 /* RecordsViewControllerTests.swift */; };
+		79BBE846248A3D8E00884517 /* MobileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE845248A3D8E00884517 /* MobileDataStore.swift */; };
+		79BBE848248A3E0000884517 /* MobileDataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE847248A3E0000884517 /* MobileDataCache.swift */; };
+		79BBE84A248A42AF00884517 /* LocalMobileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE849248A42AF00884517 /* LocalMobileDataService.swift */; };
+		79BBE84C248A42ED00884517 /* LocalRecordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE84B248A42ED00884517 /* LocalRecordItem.swift */; };
+		79BBE84E248A459500884517 /* CodableMobileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE84D248A459500884517 /* CodableMobileDataStore.swift */; };
+		79BBE851248A489800884517 /* CodableMobileDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE850248A489800884517 /* CodableMobileDataStoreTests.swift */; };
+		79BBE853248A552500884517 /* LocalMobileDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE852248A552500884517 /* LocalMobileDataServiceTests.swift */; };
+		79BBE855248A5B6900884517 /* MobileDataServiceComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE854248A5B6900884517 /* MobileDataServiceComposite.swift */; };
+		79BBE857248A5BE500884517 /* MobileDataServiceCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBE856248A5BE500884517 /* MobileDataServiceCacheDecorator.swift */; };
 		9E06FD3EC1B179D850A5C02A /* Pods_SPHTechAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71BBA91357C3B9DCC8F012D /* Pods_SPHTechAppTests.framework */; };
 		DF05565907F893E492CE3417 /* Pods_SPHTechApp_SPHTechAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE9C1E3EFD22B5CC73D7D6E /* Pods_SPHTechApp_SPHTechAppUITests.framework */; };
 		DF74CBDCDC46252A58319587 /* Pods_SPHTechApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B613EA208F3C27C8CD5BB358 /* Pods_SPHTechApp.framework */; };
@@ -68,6 +78,8 @@
 		1AE9C1E3EFD22B5CC73D7D6E /* Pods_SPHTechApp_SPHTechAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPHTechApp_SPHTechAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E4F1C4A94ED7A3B24AF3F68 /* Pods-SPHTechApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechApp.debug.xcconfig"; path = "Target Support Files/Pods-SPHTechApp/Pods-SPHTechApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5452A1B39D0588B9DA647432 /* Pods-SPHTechAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechAppTests.release.xcconfig"; path = "Target Support Files/Pods-SPHTechAppTests/Pods-SPHTechAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		792DB0E4248B40A700D34865 /* MobileDataServiceCompositeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataServiceCompositeTests.swift; sourceTree = "<group>"; };
+		792DB0E6248B433A00D34865 /* MobileDataServiceCacheDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataServiceCacheDecoratorTests.swift; sourceTree = "<group>"; };
 		797974C02489D4A9008A212D /* SPHTechApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPHTechApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		797974C32489D4A9008A212D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		797974C52489D4A9008A212D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +88,6 @@
 		797974CF2489D4AA008A212D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		797974D12489D4AA008A212D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		797974D62489D4AB008A212D /* SPHTechAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPHTechAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		797974DA2489D4AB008A212D /* SPHTechAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHTechAppTests.swift; sourceTree = "<group>"; };
 		797974DC2489D4AB008A212D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		797974E12489D4AB008A212D /* SPHTechAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPHTechAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		797974E52489D4AB008A212D /* SPHTechAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHTechAppUITests.swift; sourceTree = "<group>"; };
@@ -103,6 +114,15 @@
 		79BBE83D248A106D00884517 /* RecordCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCellModel.swift; sourceTree = "<group>"; };
 		79BBE83F248A18A400884517 /* RecordsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsUIComposer.swift; sourceTree = "<group>"; };
 		79BBE842248A203500884517 /* RecordsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewControllerTests.swift; sourceTree = "<group>"; };
+		79BBE845248A3D8E00884517 /* MobileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataStore.swift; sourceTree = "<group>"; };
+		79BBE847248A3E0000884517 /* MobileDataCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataCache.swift; sourceTree = "<group>"; };
+		79BBE849248A42AF00884517 /* LocalMobileDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMobileDataService.swift; sourceTree = "<group>"; };
+		79BBE84B248A42ED00884517 /* LocalRecordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRecordItem.swift; sourceTree = "<group>"; };
+		79BBE84D248A459500884517 /* CodableMobileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableMobileDataStore.swift; sourceTree = "<group>"; };
+		79BBE850248A489800884517 /* CodableMobileDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableMobileDataStoreTests.swift; sourceTree = "<group>"; };
+		79BBE852248A552500884517 /* LocalMobileDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMobileDataServiceTests.swift; sourceTree = "<group>"; };
+		79BBE854248A5B6900884517 /* MobileDataServiceComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataServiceComposite.swift; sourceTree = "<group>"; };
+		79BBE856248A5BE500884517 /* MobileDataServiceCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataServiceCacheDecorator.swift; sourceTree = "<group>"; };
 		B613EA208F3C27C8CD5BB358 /* Pods_SPHTechApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPHTechApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73B9DF74106B023C69602C9 /* Pods-SPHTechApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechApp.release.xcconfig"; path = "Target Support Files/Pods-SPHTechApp/Pods-SPHTechApp.release.xcconfig"; sourceTree = "<group>"; };
 		D24E01EE38C1FE5BC4103D3D /* Pods-SPHTechApp-SPHTechAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechApp-SPHTechAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SPHTechApp-SPHTechAppUITests/Pods-SPHTechApp-SPHTechAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -191,7 +211,6 @@
 			children = (
 				79BBE841248A202000884517 /* ViewControllers */,
 				797975052489DE31008A212D /* MobileDataService */,
-				797974DA2489D4AB008A212D /* SPHTechAppTests.swift */,
 				797974DC2489D4AB008A212D /* Info.plist */,
 			);
 			path = SPHTechAppTests;
@@ -209,9 +228,13 @@
 		797974F32489D866008A212D /* MobileDataService */ = {
 			isa = PBXGroup;
 			children = (
+				79BBE844248A3D2700884517 /* MobileDataCache */,
 				797974FB2489DA06008A212D /* Model */,
 				797974F82489D9B2008A212D /* MobileDataAPI */,
 				797974F92489D9CA008A212D /* MobileDataService.swift */,
+				79BBE847248A3E0000884517 /* MobileDataCache.swift */,
+				79BBE854248A5B6900884517 /* MobileDataServiceComposite.swift */,
+				79BBE856248A5BE500884517 /* MobileDataServiceCacheDecorator.swift */,
 			);
 			path = MobileDataService;
 			sourceTree = "<group>";
@@ -249,8 +272,11 @@
 		797975052489DE31008A212D /* MobileDataService */ = {
 			isa = PBXGroup;
 			children = (
+				79BBE84F248A488200884517 /* MobileDataCache */,
 				79BBE82E2489F93800884517 /* Model */,
 				797975062489DE47008A212D /* MobileDataAPI */,
+				792DB0E4248B40A700D34865 /* MobileDataServiceCompositeTests.swift */,
+				792DB0E6248B433A00D34865 /* MobileDataServiceCacheDecoratorTests.swift */,
 			);
 			path = MobileDataService;
 			sourceTree = "<group>";
@@ -331,6 +357,26 @@
 				79BBE842248A203500884517 /* RecordsViewControllerTests.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		79BBE844248A3D2700884517 /* MobileDataCache */ = {
+			isa = PBXGroup;
+			children = (
+				79BBE845248A3D8E00884517 /* MobileDataStore.swift */,
+				79BBE849248A42AF00884517 /* LocalMobileDataService.swift */,
+				79BBE84B248A42ED00884517 /* LocalRecordItem.swift */,
+				79BBE84D248A459500884517 /* CodableMobileDataStore.swift */,
+			);
+			path = MobileDataCache;
+			sourceTree = "<group>";
+		};
+		79BBE84F248A488200884517 /* MobileDataCache */ = {
+			isa = PBXGroup;
+			children = (
+				79BBE850248A489800884517 /* CodableMobileDataStoreTests.swift */,
+				79BBE852248A552500884517 /* LocalMobileDataServiceTests.swift */,
+			);
+			path = MobileDataCache;
 			sourceTree = "<group>";
 		};
 		7AA52DFC24E60BE8C9CAFB2A /* Pods */ = {
@@ -629,11 +675,16 @@
 			files = (
 				79BBE83C248A002200884517 /* BindableType.swift in Sources */,
 				797974C42489D4A9008A212D /* AppDelegate.swift in Sources */,
+				79BBE857248A5BE500884517 /* MobileDataServiceCacheDecorator.swift in Sources */,
 				79BBE82C2489F26900884517 /* AnnualRecordItem.swift in Sources */,
+				79BBE84A248A42AF00884517 /* LocalMobileDataService.swift in Sources */,
 				797975042489DC88008A212D /* HTTPURLResponse+StatusCode.swift in Sources */,
+				79BBE84C248A42ED00884517 /* LocalRecordItem.swift in Sources */,
 				797974FF2489DAE6008A212D /* HTTPClient.swift in Sources */,
 				797974F72489D8E6008A212D /* RemoteMobileDataService.swift in Sources */,
+				79BBE855248A5B6900884517 /* MobileDataServiceComposite.swift in Sources */,
 				79BBE8382489FFE900884517 /* RecordsViewModel.swift in Sources */,
+				79BBE846248A3D8E00884517 /* MobileDataStore.swift in Sources */,
 				797975012489DB80008A212D /* RecordItemMapper.swift in Sources */,
 				7979750A2489E446008A212D /* URLSessionHTTPClient.swift in Sources */,
 				797974FA2489D9CA008A212D /* MobileDataService.swift in Sources */,
@@ -643,6 +694,8 @@
 				797974FD2489DA17008A212D /* RecordItem.swift in Sources */,
 				79BBE83E248A106D00884517 /* RecordCellModel.swift in Sources */,
 				79BBE8332489FF1E00884517 /* RecordsViewController.swift in Sources */,
+				79BBE848248A3E0000884517 /* MobileDataCache.swift in Sources */,
+				79BBE84E248A459500884517 /* CodableMobileDataStore.swift in Sources */,
 				797974F52489D891008A212D /* RemoteRecordItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -651,7 +704,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				797974DB2489D4AB008A212D /* SPHTechAppTests.swift in Sources */,
+				79BBE851248A489800884517 /* CodableMobileDataStoreTests.swift in Sources */,
+				792DB0E5248B40A700D34865 /* MobileDataServiceCompositeTests.swift in Sources */,
+				79BBE853248A552500884517 /* LocalMobileDataServiceTests.swift in Sources */,
+				792DB0E7248B433A00D34865 /* MobileDataServiceCacheDecoratorTests.swift in Sources */,
 				79BBE8302489F94800884517 /* AnnualRecordItemTests.swift in Sources */,
 				79BBE843248A203500884517 /* RecordsViewControllerTests.swift in Sources */,
 				797975082489DE79008A212D /* RemoteMobileDataServiceTests.swift in Sources */,
